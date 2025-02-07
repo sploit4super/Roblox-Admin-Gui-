@@ -1,3 +1,6 @@
+-- Gui to Lua
+-- Version: 3.2
+
 -- Instances:
 
 local AdminGui = Instance.new("ScreenGui")
@@ -9,6 +12,7 @@ local Health = Instance.new("TextButton")
 
 AdminGui.Name = "Admin Gui"
 AdminGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+AdminGui.ResetOnSpawn = false
 
 fly.Name = "fly"
 fly.Parent = AdminGui
@@ -42,7 +46,7 @@ Health.TextSize = 12.000
 
 -- Scripts:
 
-local function QDDPW_fake_script() -- MoonJump.FlyOnButtonClick 
+local function YDPA_fake_script() -- MoonJump.FlyOnButtonClick 
 	local script = Instance.new('LocalScript', MoonJump)
 
 	local button = script.Parent
@@ -67,8 +71,8 @@ local function QDDPW_fake_script() -- MoonJump.FlyOnButtonClick
 	
 	
 end
-coroutine.wrap(QDDPW_fake_script)()
-local function AGTU_fake_script() -- fly.Drag 
+coroutine.wrap(YDPA_fake_script)()
+local function IUWDVG_fake_script() -- fly.Drag 
 	local script = Instance.new('LocalScript', fly)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -111,8 +115,8 @@ local function AGTU_fake_script() -- fly.Drag
 		end
 	end)
 end
-coroutine.wrap(AGTU_fake_script)()
-local function BETW_fake_script() -- Health.Max Health 
+coroutine.wrap(IUWDVG_fake_script)()
+local function GCSAUNK_fake_script() -- Health.Max Health 
 	local script = Instance.new('LocalScript', Health)
 
 	local Players = game:GetService("Players")
@@ -137,4 +141,4 @@ local function BETW_fake_script() -- Health.Max Health
 	
 	
 end
-coroutine.wrap(BETW_fake_script)()
+coroutine.wrap(GCSAUNK_fake_script)()
